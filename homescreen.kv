@@ -1,0 +1,48 @@
+<Homescreen>:
+	MDScreen:
+		MDBoxLayout:
+			orientation: 'vertical'
+			md_bg_color:"blue"
+			MDLabel:
+				text:"Home Page"
+				font_size:40
+				pos_hint: {'center_y': 1}
+				halign:"center"
+				color:"white"
+				bold:True
+			MDLabel:
+				text:"this is Home Page"
+				font_size:40
+				pos_hint: {'center_y': 1}
+				halign:"center"
+				color:"white"
+				bold:True
+
+			# CREATE BUTTON
+			MDBoxLayout:
+				orientation:"vertical"
+				spacing:20
+				md_bg_color:"purple"
+				MDRaisedButton:
+					text:"go to screen 2 with ripple effect"
+					md_bg_color:"red"
+					on_release:root.RippleEffect()
+					pos_hint:{"center_y":2,"center_x":.5}
+				MDRaisedButton:
+					text:"go to screen 2 with blur effect"
+					md_bg_color:"red"
+					on_release:root.BlurEffect()
+					pos_hint:{"center_y":2,"center_x":.5}
+				MDRaisedButton:
+					text:"go to screen 2 with RVB effect"
+					md_bg_color:"red"
+					on_release:root.RVBEffect()
+					pos_hint:{"center_y":2,"center_x":.5}
+					
+				MDRaisedButton:
+					text:"go to screen 2 with Pixel effect"
+					md_bg_color:"red"
+					on_release:root.PixelEffect()
+					pos_hint:{"center_y":2,"center_x":.5}
+					
+				
